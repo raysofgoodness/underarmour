@@ -8,26 +8,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body id="body">
    <header class="header">
        <div class="container">
            <div class="header__inner">
                <div class="user-nav">
                    <div class="logo"><a href="#"><img src="images/logo.png" alt="" class="logo__images"></a></div>
-                   <div class="burger-menu" tabindex="0">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <div class="burger-menu" id="burger-menu" tabindex="0">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.25 15H21.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M8.25 10.5H21.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M8.25 19.5H21.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
+                        <ul class="burger-dropdown" id="burger-dropdown">
+                            <li class="burger-dropdown-item"><a href="#" class="burger-dropdown-link">Gift Guide</a></li>
+                            <li class="burger-dropdown-item"><a href="#" class="burger-dropdown-link">About Us</a></li>
+                            <li class="burger-dropdown-item"><a href="#" class="burger-dropdown-link">UA Newsroom</a></li>
+                            <li class="burger-dropdown-item"><a href="#" class="burger-dropdown-link">Collections</a></li>
+                            <li class="burger-dropdown-item"><a href="#" class="burger-dropdown-link">Best Sellers</a></li>
+                            <li class="burger-dropdown-item"><a href="#" class="burger-dropdown-link">Corporate Customize</a></li>
+                        </ul>
                    </div>
                    <form class="form__search">
                        <div class="form__search-inner">
-                                <a class="search__button" href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a class="search__button" href="#" tabindex="0"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9.9 14.85C12.3301 14.85 14.3 12.8801 14.3 10.45C14.3 8.01995 12.3301 6.05 9.9 6.05C7.46995 6.05 5.5 8.01995 5.5 10.45C5.5 12.8801 7.46995 14.85 9.9 14.85Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M15.4001 15.95L13.0076 13.5575" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg></a>
-                                <input type="text" class="search__input" placeholder="Search" id="search-input">
+                                <input type="text" class="search__input" placeholder="Search" id="search-input" tabindex="0">
                        </div>
                    </form>
                </div>
