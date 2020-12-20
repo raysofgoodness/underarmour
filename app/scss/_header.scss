@@ -13,7 +13,7 @@
 .logo {
     margin-right: 40px;
 }
-.burger-menu, .user__nav-link {
+.burger-menu, .search__button, .user__nav-link {
     display: block;
     position: relative;
     width: 46px;
@@ -23,6 +23,7 @@
     margin-left: 12px;
     cursor: pointer;
     svg {
+        transition: all .5s;
         @include center-item;
     }
 }
@@ -145,37 +146,28 @@
     line-height: 15px;
     transition: all .5s;
 }
-.form__search {
-    display: flex;
-    align-items: center;
-}
 .form__search-inner {
     display: flex;
     align-items: center;
-    padding-left: 70px;
-    position: relative;
-    // &::before {
-    //     content: url("../images/icons/search.svg");
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     cursor: pointer;
-    // }
+    transition: all .5s;
+    &:hover {
+        .search__button {
+            background-color: rgba($color: #000, $alpha: 0.2);
+            svg {
+                path {
+                    stroke: black; 
+                }
+            }
+        }
+        .search__input {
+            width: 180px;
+            border-bottom: 1px solid #000;
+        }
+    }
 }
-.search__label-inner {
-    position: absolute;
-    top: -13px;
-    left: 12px;
-    width: 46px;
-    height: 46px;
-    background-color: rgba($color: #fff, $alpha: 0.2);
-    border-radius: 50%;
-}
-.search__label {
-    position: absolute;
-    top: 11px;
-    left: 13px;
-    cursor: pointer;
+.search__button {
+    transition: all .5s;
+    margin-right: 16px;
 }
 .search__input {
     border: none;
@@ -184,19 +176,14 @@
     line-height: 18px;
     padding: 2px;
     transition: all .5s;
-    width: 0;
     border-bottom: 1px solid transparent;
+    width: 0;
 }
 .search__input:focus {
     outline: none;
     border: none;
     background-color: transparent;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    line-height: 18px;
     color: rgba($color: #000, $alpha: 0.5);
     border-bottom: 1px solid #000;
     padding: 2px;
-    transition: all .5s;
-    width: 180px;
 }
