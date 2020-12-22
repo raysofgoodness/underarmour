@@ -1,7 +1,8 @@
 .header {
-    background-color: $brand-color;
-    position: relative;
-    z-index: 200;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -12,9 +13,8 @@
 .user-nav, .user-nav__right {
     display: flex;
 }
-.user-nav {
+.burger-menu {
     position: relative;
-    z-index: 100;
 }
 .logo {
     margin-right: 40px;
@@ -49,8 +49,7 @@
 .burger-dropdown {
     position: absolute;
     top: 53px;
-    right: 20px;
-    z-index: 20;
+    left: -50px;
     background-color: #fff;
     width: 167px;
     transition: all .3s ease-in .1s;
@@ -71,7 +70,7 @@
     line-height: 15px;
     transition: all .5s;
 }
-.burger-menu {
+.burger-button {
     &:focus {
         outline: none;
     }
@@ -79,6 +78,7 @@
 .menu-open {
     .burger-button {
         background-color: rgba($color: #fff, $alpha: 1);
+        outline: none;
     }
     svg {
         path {
@@ -104,6 +104,9 @@
             opacity: 1;
             visibility: visible; 
         }
+        .dropdown-into-menu-link {
+            color: #000;
+        }
     }
 }
 .dropdown-menu-link {
@@ -112,8 +115,7 @@
     font-family: Montserrat;
     line-height: 15px;
     color: #fff;
-    padding: 26px 15px;
-    margin: 0px 10px;
+    padding: 26px;
     text-transform: uppercase;
     transition: all .5s;
 }
@@ -130,32 +132,18 @@
 }
 .dropdown-into-menu-item {
     display: block;
-    padding: 7px 0px;
     text-align: center;
     background-color: #fff;
     position: relative;
     cursor: pointer;
     transition: all .5s;
-    &::after {
-        content: "";
-        position: absolute;
-        top: 16px;
-        right: 0px;
-        height: 2px;
-        width: 7px;
-        background-color: rgba($color: #000, $alpha: 0.2);
-        transition: all .5s;
-        z-index: 10;
-    }
+    padding: 12px 0px;
     &:hover {
         background-color: #fff;
         &::after {
-            right: -18px;
-            width: 26px;
+            right: -10px;
+            width: 28px;
             background-color: #000;
-        }
-        .dropdown-into-menu-link {
-            color: #000;
         }
         .right-dropdown {
             opacity: 1;
@@ -172,7 +160,7 @@
 }
 .right-dropdown {
     position: absolute;
-    top: -55px;
+    top: -51px;
     right: -100%;
     background-color: #fff;
     display: block;

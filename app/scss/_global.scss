@@ -33,3 +33,16 @@ ul, li {
     padding: 0 15px;
     margin: 0 auto;
 }
+.right-line {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 21px;
+        right: 15px;
+        height: 2px;
+        width: 7px;
+        background-color: rgba($color: #000, $alpha: 0.2);
+        transition: all .5s;
+        z-index: 10;
+    }
+}
