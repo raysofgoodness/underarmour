@@ -1,3 +1,6 @@
-document.getElementById('burger-menu').onclick = function() {
-    document.getElementById('burger-menu').classList.toggle('menu-open');
-  }
+$(document).ready(function(){
+  $('.burger-menu').click(function(event){
+    $('.burger-menu').toggleClass('menu-open');
+  });
+
+});

@@ -12,10 +12,14 @@
 .user-nav, .user-nav__right {
     display: flex;
 }
+.user-nav {
+    position: relative;
+    z-index: 100;
+}
 .logo {
     margin-right: 40px;
 }
-.burger-menu, .search__button, .user__nav-link {
+.burger-button, .search__button, .user__nav-link {
     display: block;
     position: relative;
     width: 46px;
@@ -45,10 +49,11 @@
 .burger-dropdown {
     position: absolute;
     top: 53px;
-    left: -59px;
+    right: 20px;
+    z-index: 20;
     background-color: #fff;
     width: 167px;
-    transition: all .5s;
+    transition: all .3s ease-in .1s;
     transform: translateY(-100%);
     opacity: 0;
 }
@@ -65,7 +70,6 @@
     @include f600;
     line-height: 15px;
     transition: all .5s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 0.5);
 }
 .burger-menu {
     &:focus {
@@ -73,7 +77,9 @@
     }
 }
 .menu-open {
-    background-color: rgba($color: #fff, $alpha: 1);
+    .burger-button {
+        background-color: rgba($color: #fff, $alpha: 1);
+    }
     svg {
         path {
             stroke: #000;
@@ -82,6 +88,7 @@
     .burger-dropdown {
         transform: translateY(0%);
         opacity: 1;
+        transition: all .3s ease .1s;
     }
 }
 .dropdown-menu-item {

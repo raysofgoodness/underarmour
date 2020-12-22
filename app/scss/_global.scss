@@ -12,9 +12,13 @@ body {
     font-size: 16px;
     color: #000;
 }
-a, ul, li, input {
+a, ul, li, input, button {
     margin: 0;
     padding: 0;
+}
+button {
+    background-color: transparent;
+    border: none;
 }
 a {
     color: inherit;
