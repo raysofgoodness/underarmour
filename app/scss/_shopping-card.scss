@@ -36,15 +36,23 @@
     border-radius: 50%;
     cursor: pointer;
     &::before {
-        content: url('../images/icons/favorite.svg');
+        content: "";
         position: absolute;
+        width: 30px;
+        height: 30px;
         top: 9px;
         left: 7px;
+        background-image: url('../images/icons/favorite.svg');
+    }
+    &--active {
+        &::before {
+            background-image: url('../images/icons/favorite-active.svg');
+        }
     }
 }
 .product-item__more-link {
     position: absolute;
-    bottom: 32px;
+    bottom: 28px;
     right: 60px;
     @include f600;
     font-size: 14px;
