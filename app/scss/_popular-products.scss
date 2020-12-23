@@ -1,0 +1,16 @@
+.popular__products-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+.products-item__box {
+    margin-left: $step20;
+}
+.products-item__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $step20;
+    .product-item__wrapper + .product-item__wrapper {
+        margin-left: $step20;
+    }
+}

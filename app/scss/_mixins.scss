@@ -4,6 +4,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+@mixin  f800 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
 @mixin  f700 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -15,4 +19,32 @@
 @mixin  f600 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+}
+@mixin big__card-title {
+    @include f700;
+    font-size: 20px;
+    line-height: 32px;
+}
+@mixin big__card-text {
+    @include f500;
+    font-size: 16px;
+    line-height: 18px;
+}
+@mixin card-price {
+    @include f700;
+    font-size: 18px;
+    line-height: 22px;
+}
+@mixin big__card-price {
+    @include card-price;
+    @include f800;
+}
+@mixin standart__card-price {
+    @include f500;
+    font-size: 12px;
+}
+@mixin standart__card-category {
+    @include f500;
+    font-size: 12px;
+    color: $category-color;
 }
