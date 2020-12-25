@@ -12,14 +12,26 @@ $(function() {
 
 });
 
-var mySwiper = new Swiper('.slider-container', {
-  loop: true,
+let mySwiper = new Swiper('.hero-slider__container', {
+  slidesPerView: 1,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  keyboard: {
+    enabled: true,
+  },
   pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction'
+    el: '.hero-slider__pagination',
+    type: 'fraction', 
+    renderFraction: function (currentClass, totalClass) {
+      return '0<span class="' + currentClass + '"></span>' +
+              '/' +
+              '0<span class="' + totalClass + '"></span>';
+  }
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  }
-})
+    nextEl: '.hero-slider__button-next',
+    prevEl: '.hero-slider__button-prev',
+  },
+});
