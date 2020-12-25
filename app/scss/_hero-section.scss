@@ -1,5 +1,17 @@
 .hero__block {
-    background-color: $brand-color;
     margin-bottom: 50px;
-    height: 100vh;
+    background-color: $brand-color;
+}
+.slider-container {
+    max-width: 1400px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.swiper-slide {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    min-height: 100vh;
+    width: 100%;
 }
