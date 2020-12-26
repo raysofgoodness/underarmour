@@ -13,7 +13,14 @@
        <div class="container">
            <div class="header__inner">
                <div class="user-nav">
-                   <div class="logo"><a href="#"><img src="images/content/logo.png" alt="" class="logo__images"></a></div>
+                   <div class="logo">
+                     <a class="logo__images" href="#">
+                       <picture>
+                           <source srcset="images/content/logo-mobile.png" media="(max-width: 575px)">
+                            <img src="images/content/logo.png" alt="logo">
+                        </picture>
+                     </a>
+                    </div>
                    <div class="burger-menu">
                         <button class="burger-button" id="burger-button" type="button"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.25 15H21.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -85,12 +92,30 @@
        </div>
    </header>
    <section class="hero__block">
-       <div class="hero-container">
+       <div class="container">
         <div class="hero-slider__container">
             <div class="hero-slider__container-wrapper swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url(images/content/main-banner.jpg);"></div>
-                <div class="swiper-slide" style="background-image: url(images/content/main-banner.jpg);"></div>
-                <div class="swiper-slide" style="background-image: url(images/content/main-banner.jpg);"></div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="images/content/main-banner-mobile.png" media="(max-width: 575px)">
+                         <img class="hero-slider__images" src="images/content/main-banner.jpg" alt="logo">
+                     </picture>
+                     <a class="hero-slider__btn-more" name="more-link" href="#">More</a>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="images/content/main-banner-mobile.png" media="(max-width: 575px)">
+                         <img class="hero-slider__images" src="images/content/main-banner.jpg" alt="logo">
+                     </picture>
+                     <a class="hero-slider__btn-more" name="more-link" href="#">More</a>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="images/content/main-banner-mobile.png" media="(max-width: 575px)">
+                         <img class="hero-slider__images" src="images/content/main-banner.jpg" alt="logo">
+                     </picture>
+                     <a class="hero-slider__btn-more" name="more-link" href="#">More</a>
+                </div>
             </div>
             <div class="hero-slider__pagination"></div>
             <div class="hero-slider__button-prev"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1L2 6L7 11" stroke="white" stroke-width="2"/></svg></div>
