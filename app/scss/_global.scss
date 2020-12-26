@@ -42,9 +42,8 @@ ul, li {
     padding: 0 15px;
     margin: 0 auto;
 }
-.hero-container {
-    max-width: 1500px;
-    padding: 0;
+.container-slider {
+    position: relative;
 }
 .right-line {
     &::after {

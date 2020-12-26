@@ -13,7 +13,7 @@
     .swiper-pagination-fraction {
         position: absolute;
         top: calc(100vh - 106px);
-        left: 0;
+        left: 48px;
         z-index: 100;
         font-weight: 700;
         color: #fff; 
@@ -26,8 +26,8 @@
     align-items: center;
 }
 .hero-slider__images {
-    background-color: $brand-color;
     max-width: 100%;
+    object-fit: cover;
 }
 .hero-slider__button-prev, .hero-slider__button-next {
     position: absolute;
@@ -50,14 +50,14 @@
     }
 }
 .hero-slider__button-prev {
-    left: 7%;
+    left: 132px;
 }
 .hero-slider__button-next {
-    left: 11%;
+    left: 190px;
 }
 .hero-slider__btn-more {
     position: absolute;
-    left: 0;
+    left: 48px;
     top: 50%;
     width: 168px;
     background-color: #fff;
