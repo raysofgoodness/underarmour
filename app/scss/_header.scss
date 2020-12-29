@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 200;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -52,7 +52,7 @@
     background-color: #fff;
     width: 167px;
     transition: all .3s ease-in .1s;
-    transform: translateY(-100%);
+    transform: translateY(-200%);
     opacity: 0;
 }
 .burger-dropdown-item {

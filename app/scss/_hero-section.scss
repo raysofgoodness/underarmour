@@ -13,7 +13,7 @@
     .swiper-pagination-fraction {
         position: absolute;
         top: calc(100vh - 106px);
-        left: 48px;
+        left: 54px;
         z-index: 100;
         font-weight: 700;
         color: #fff; 
@@ -31,7 +31,6 @@
 }
 .hero-slider__button-prev, .hero-slider__button-next {
     position: absolute;
-    display: block;
     width: 46px;
     height: 46px;
     background-color: rgba($color: #fff, $alpha: 0.2);
@@ -50,14 +49,14 @@
     }
 }
 .hero-slider__button-prev {
-    left: 132px;
+    left: 168px;
 }
 .hero-slider__button-next {
-    left: 190px;
+    left: 228px;
 }
 .hero-slider__btn-more {
     position: absolute;
-    left: 48px;
+    left: 54px;
     top: 50%;
     width: 168px;
     background-color: #fff;

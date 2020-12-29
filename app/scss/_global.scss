@@ -42,8 +42,8 @@ ul, li {
     padding: 0 15px;
     margin: 0 auto;
 }
-.container-slider {
-    position: relative;
+.container-hero {
+    max-width: 1470px;
 }
 .right-line {
     &::after {
@@ -57,4 +57,12 @@ ul, li {
         transition: all .5s;
         z-index: 10;
     }
+}
+.title {
+    font-size: 36px;
+    line-height: 47px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    text-align: center;
 }
