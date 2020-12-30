@@ -39,11 +39,6 @@
     top: calc(100vh - 120px);
     z-index: 100;
     cursor: pointer;
-    .swiper-button-disabled {
-        background-color: transparent;
-        opacity: 0.2;
-        border: 1px solid #fff;
-    }
     svg {
         @include center-item;
     }

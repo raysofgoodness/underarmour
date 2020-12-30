@@ -118,8 +118,8 @@
                 </div>
             </div>
             <div class="hero-slider__pagination"></div>
-            <div class="hero-slider__button-prev"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1L2 6L7 11" stroke="white" stroke-width="2"/></svg></div>
-            <div class="hero-slider__button-next"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L1 11" stroke="white" stroke-width="2"/></svg></div>
+            <button class="hero-slider__button-prev" aria-label="Button slider preview"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1L2 6L7 11" stroke="white" stroke-width="2"/></svg></button>
+            <button class="hero-slider__button-next" aria-label="Button slider next"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L1 11" stroke="white" stroke-width="2"/></svg></button>
         </div>
        </div>
    </section>
@@ -232,21 +232,26 @@
                                 <a class="collection-slider__item-more-link" href="#" name="more-link">MORE</a>
                             </div>
                             <div class="collection-slider__video-inner">
-                                <video class="colletcion-slider__video" src=""></video>
-                                <div class="colletction-slider__buttons-control">
-                                    <button class="collection-slider__button-play"></button>
-                                    <button class="collection-slider__button-pause"></button>
+                                <div class="video">
+                                    <a class="video__link" href="https://www.youtube.com/watch?v=Wkt0Q6p33fo">
+                                        <img class="video__media" src="images/content/banner-video.png" alt="Under Armour Women Video">
+                                        <button class="video__button" aria-label="Play video"></button>
+                                    </a>
                                 </div>
                                 <div class="collection-slider__share-menu">
                                     <ul class="collection-slider__share-items">
-                                        <li class="collection-slider__share-item"><a href="#" class="collection-slider__share-link"></a></li>
-                                        <li class="collection-slider__share-item"><a href="#" class="collection-slider__share-link"></a></li>
-                                        <li class="collection-slider__share-item"><a href="#" class="collection-slider__share-link"></a></li>
-                                        <li class="collection-slider__share-item"><a href="#" class="collection-slider__share-link"></a></li>
+                                        <li class="collection-slider__share-item"><a href="#" class="collection-slider__share-link"><svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 1H9C7.67392 1 6.40215 1.52678 5.46447 2.46447C4.52678 3.40215 4 4.67392 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.73478 8.10536 5.48043 8.29289 5.29289C8.48043 5.10536 8.73478 5 9 5H12V1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Facebook</a></li>
+                                        <li class="collection-slider__share-item"><a href="#" class="collection-slider__share-link"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25 10H15C12.2386 10 10 12.2386 10 15V25C10 27.7614 12.2386 30 15 30H25C27.7614 30 30 27.7614 30 25V15C30 12.2386 27.7614 10 25 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 19.3701C24.1234 20.2023 23.9812 21.0523 23.5937 21.7991C23.2062 22.5459 22.5931 23.1515 21.8416 23.5297C21.0901 23.908 20.2384 24.0397 19.4077 23.906C18.5771 23.7723 17.8097 23.3801 17.2148 22.7852C16.6199 22.1903 16.2277 21.4229 16.094 20.5923C15.9604 19.7616 16.092 18.91 16.4703 18.1584C16.8485 17.4069 17.4541 16.7938 18.2009 16.4063C18.9477 16.0188 19.7977 15.8766 20.63 16.0001C21.4789 16.1259 22.2648 16.5215 22.8716 17.1284C23.4785 17.7352 23.8741 18.5211 24 19.3701Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Instagram</a></li>
+                                        <li class="collection-slider__share-item"><a href="#" class="collection-slider__share-link"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 1.01006C22.0424 1.68553 20.9821 2.20217 19.86 2.54006C19.2577 1.84757 18.4573 1.35675 17.567 1.13398C16.6767 0.911216 15.7395 0.967251 14.8821 1.29451C14.0247 1.62177 13.2884 2.20446 12.773 2.96377C12.2575 3.72309 11.9877 4.62239 12 5.54006V6.54006C10.2426 6.58562 8.50127 6.19587 6.93101 5.4055C5.36074 4.61513 4.01032 3.44869 3 2.01006C3 2.01006 -1 11.0101 8 15.0101C5.94053 16.408 3.48716 17.109 1 17.0101C10 22.0101 21 17.0101 21 5.51006C20.9991 5.23151 20.9723 4.95365 20.92 4.68006C21.9406 3.67355 22.6608 2.40277 23 1.01006V1.01006Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Twitter</a></li>
+                                        <li class="collection-slider__share-item"><a href="#" class="collection-slider__share-link"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.5406 14.42C30.4218 13.9454 30.1799 13.5106 29.8392 13.1594C29.4986 12.8082 29.0713 12.5532 28.6006 12.42C26.8806 12 20.0006 12 20.0006 12C20.0006 12 13.1206 12 11.4006 12.46C10.9298 12.5932 10.5025 12.8482 10.1619 13.1994C9.82129 13.5506 9.57936 13.9854 9.46057 14.46C9.14579 16.2056 8.99181 17.9763 9.00057 19.75C8.98935 21.537 9.14334 23.3213 9.46057 25.08C9.59153 25.5398 9.83888 25.9581 10.1787 26.2945C10.5186 26.6308 10.9394 26.8738 11.4006 27C13.1206 27.46 20.0006 27.46 20.0006 27.46C20.0006 27.46 26.8806 27.46 28.6006 27C29.0713 26.8668 29.4986 26.6118 29.8392 26.2606C30.1799 25.9094 30.4218 25.4746 30.5406 25C30.8529 23.2676 31.0069 21.5103 31.0006 19.75C31.0118 17.963 30.8578 16.1787 30.5406 14.42V14.42Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.7505 23.02L23.5005 19.75L17.7505 16.48V23.02Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Youtube</a></li>
                                     </ul>
+                                    <button class="collection-slider__share-btn" aria-label="Share btn"></button>
                                 </div>
                             </div>
                         </div>
+                        <div class="collection-slider__pagination"></div>
+                        <button class="collection-slider__button-prev" aria-label="Button slider preview"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 11L2 6L7 1" stroke="black" stroke-width="2"/></svg></button>
+                        <button class="collection-slider__button-next" aria-label="Button slider next"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 11L6 6L1 1" stroke="black" stroke-width="2"/></svg></button>
                     </div>
                </div>
            </div>

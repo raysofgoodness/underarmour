@@ -6,8 +6,12 @@ $(function() {
   
   $('.product-item__favorite').on('click', function () {
 		$(this).toggleClass('product-item__favorite--active')
-	});
-
+  });
+  
+  $('.collection-slider__share-btn').on('click', function () {
+		$('.collection-slider__share-items').toggleClass('open-share')
+  });
+  
 });
 
 let mySwiper = new Swiper('.hero-slider__container', {
@@ -33,3 +37,6 @@ let mySwiper = new Swiper('.hero-slider__container', {
     prevEl: '.hero-slider__button-prev',
   },
 });
+
+
+

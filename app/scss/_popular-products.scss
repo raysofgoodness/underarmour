@@ -5,6 +5,7 @@
 }
 .products-item__box {
     margin-left: $step20;
+    flex: 1 1 60%;
 }
 .products-item__inner {
     display: flex;
@@ -12,5 +13,8 @@
     margin-bottom: $step20;
     .product-item__wrapper + .product-item__wrapper {
         margin-left: $step20;
+    }
+    .product-item__wrapper {
+        flex: 1 1 50%;
     }
 }
