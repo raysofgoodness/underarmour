@@ -1,0 +1,27 @@
+.more-items {
+    margin-bottom: 150px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;  
+    }
+}
+.more-item__link {
+    position: relative;
+    width: 420px;
+}
+.more-item__image {
+    width: 100%;
+}
+.more-item__btn {
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 53px;
+    left: 36px;
+    background-color: #fff;
+    max-width: 349px;
+    width: 100%;
+}
