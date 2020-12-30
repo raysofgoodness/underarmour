@@ -38,5 +38,25 @@ let mySwiper = new Swiper('.hero-slider__container', {
   },
 });
 
+let mySwiperSecond = new Swiper('.collection-slider__container', {
+  slidesPerView: 1,
+  keyboard: {
+    enabled: true,
+  },
+  pagination: {
+    el: '.collection-slider__pagination',
+    type: 'fraction', 
+    renderFraction: function (currentClass, totalClass) {
+      return '0<span class="' + currentClass + '"></span>' +
+              '/' +
+              '0<span class="' + totalClass + '"></span>';
+  }
+  },
+  navigation: {
+    nextEl: '.collection-slider__button-prev',
+    prevEl: '.collection-slider__button-next',
+  },
+});
+
 
 
