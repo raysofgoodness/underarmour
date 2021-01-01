@@ -2,6 +2,22 @@
     margin-bottom: 130px;
     position: relative;
 }
+.reviews-content-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    .swiper-button-disabled {
+        background-color: transparent;
+    }
+    .swiper-pagination-fraction {
+        position: absolute;
+        top: 256px;
+        left: 282px;
+        z-index: 100;
+        font-weight: 700;
+        color: #000;
+    }
+}
 .reviews-stars__title {
     max-width: 258px;
     font-size: 48px;
@@ -13,6 +29,9 @@
 .reviews-content-slider__item {
     text-align: right;
     position: relative;
+    width: 100%;
+    min-height: 597px;
+    display: block;
 }
 .review-content__img-innner {
     min-height: 523px;
@@ -23,12 +42,12 @@
 }
 .star__review {
     text-align: left;
-    max-width: 739px;
+    max-width: 539px;
     width: 100%;
     background-color: $brand-color;
-    padding: 68px 105px;
+    padding: 68px 115px 68px 105px;
     position: absolute;
-    bottom: -74px;
+    bottom: 2px;
     color: #fff;
 }
 .name-star {
@@ -60,10 +79,10 @@
     font-size: 12px;
     line-height: 18px;
     font-weight: 700;
-    padding: 30px;
-    right: -208px;
+    padding: 28px;
+    right: -216px;
     bottom: 0px;
-    max-width: 208px;
+    max-width: 160px;
     width: 100%;
     text-transform: uppercase;
     svg {
@@ -73,4 +92,14 @@
             fill: #fff;
         }
     }
+}
+.reviews-content-slider__button-prev, .reviews-content-slider__button-next {
+    @extend .collection-slider__button-next;
+    top: 240px;
+    left: 360px;
+    cursor: pointer;
+    z-index: 200;
+}
+.reviews-content-slider__button-next {
+    left: 420px;
 }

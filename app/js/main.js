@@ -58,5 +58,25 @@ let mySwiperSecond = new Swiper('.collection-slider__container', {
   },
 });
 
+let mySwiperStars = new Swiper('.reviews-content-slider', {
+  slidesPerView: 1,
+  keyboard: {
+    enabled: true,
+  },
+  pagination: {
+    el: '.reviews-content-slider__pagination',
+    type: 'fraction', 
+    renderFraction: function (currentClass, totalClass) {
+      return '0<span class="' + currentClass + '"></span>' +
+              '/' +
+              '0<span class="' + totalClass + '"></span>';
+  }
+  },
+  navigation: {
+    nextEl: '.reviews-content-slider__button-next',
+    prevEl: '.reviews-content-slider__button-prev',
+  },
+});
+
 
 

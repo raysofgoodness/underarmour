@@ -11,7 +11,6 @@
 }
 .collection-slider__container {
     width: 100%;
-    // position: relative;
     overflow: hidden;
     .swiper-button-disabled {
         background-color: transparent;
@@ -23,9 +22,6 @@
         z-index: 100;
         font-weight: 700;
         color: #000; 
-    }
-    .swiper-wrapper {
-        min-width: 0;
     }
     .swiper-slide {
         align-items: unset;
