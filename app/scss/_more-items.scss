@@ -7,7 +7,11 @@
 }
 .more-item__link {
     position: relative;
-    width: 420px;
+    max-width: 420px;
+    width: 100%;
+    & + & {
+        margin-left: 10px;
+    }
 }
 .more-item__image {
     width: 100%;

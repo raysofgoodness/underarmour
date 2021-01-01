@@ -16,6 +16,7 @@
         z-index: 100;
         font-weight: 700;
         color: #000;
+        max-width: 300px;
     }
 }
 .reviews-stars__title {
@@ -49,6 +50,7 @@
     position: absolute;
     bottom: 2px;
     color: #fff;
+    z-index: 200;
 }
 .name-star {
     font-weight: 600;
@@ -85,6 +87,7 @@
     max-width: 160px;
     width: 100%;
     text-transform: uppercase;
+    cursor: pointer;
     svg {
         position: absolute;
         right: 20px;
