@@ -53,8 +53,8 @@ let mySwiperSecond = new Swiper('.collection-slider__container', {
   }
   },
   navigation: {
-    nextEl: '.collection-slider__button-prev',
-    prevEl: '.collection-slider__button-next',
+    nextEl: '.collection-slider__button-next',
+    prevEl: '.collection-slider__button-prev',
   },
 });
 

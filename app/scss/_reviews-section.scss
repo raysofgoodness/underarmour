@@ -1,0 +1,76 @@
+.reviews-stars {
+    margin-bottom: 130px;
+    position: relative;
+}
+.reviews-stars__title {
+    max-width: 258px;
+    font-size: 48px;
+    line-height: 62px;
+    font-weight: 700;
+    position: absolute;
+    top: -10px;
+}
+.reviews-content-slider__item {
+    text-align: right;
+    position: relative;
+}
+.review-content__img-innner {
+    min-height: 523px;
+    display: inline-block;
+}
+.review-content__img-star {
+    object-fit: cover;
+}
+.star__review {
+    text-align: left;
+    max-width: 739px;
+    width: 100%;
+    background-color: $brand-color;
+    padding: 68px 105px;
+    position: absolute;
+    bottom: -74px;
+    color: #fff;
+}
+.name-star {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;  
+    padding-bottom: 10px;
+}
+.status-star {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+.phrase-star {
+    max-width: 407px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.review-logo {
+    position: absolute;
+    top: 54px;
+    right: 54px;
+}
+.review-content__more-btn {
+    position: absolute;
+    background-color: #000;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    padding: 30px;
+    right: -208px;
+    bottom: 0px;
+    max-width: 208px;
+    width: 100%;
+    text-transform: uppercase;
+    svg {
+        position: absolute;
+        right: 20px;
+        path {
+            fill: #fff;
+        }
+    }
+}
