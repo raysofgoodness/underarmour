@@ -129,7 +129,7 @@
                <div class="product-item__wrapper product-item__wrapper--large-item">
                    <button class="product-item__favorite" name="favorite-icon"></button>
                    <a class="product-item__more-link" href="#">More</a>
-                   <a class="product-item product-item--big-card" href="#">
+                   <a class="product-item product-item--big-card product-item--new" href="#">
                     <h4 class="product-item__title">Men's UA HOVR™</h4>
                     <p class="product-item__text">Phantom/SE Running</p>
                     <p class="product-item__text-category">Shoes</p>
@@ -142,8 +142,9 @@
                     <div class="product-item__wrapper">
                         <button class="product-item__favorite" name="favorite-icon"></button>
                         <a class="product-item__more-link" href="#">More</a>
-                        <a class="product-item product-item--standart-card" href="#">
-                            <p class="product-item__price">$ 115</p>
+                        <a class="product-item product-item--standart-card product-item--sale" href="#">
+                            <p class="product-item__price--sale">$90.00</p>
+                            <p class="product-item__price">$ 75</p>
                             <div class="product-item__img"><img src="images/content/product-image-2.png" alt=""></div>
                             <h4 class="product-item__title">Perpetual Print Parka</h4>
                             <p class="product-item__text-category">Shoes</p>
@@ -165,7 +166,7 @@
                    <div class="product-item__wrapper product-item__wrapper--gorizontal-item">
                     <button class="product-item__favorite" name="favorite-icon"></button>
                     <a class="product-item__more-link" href="#">More</a>
-                    <a class="product-item product-item--gorizontal-card" href="#">
+                    <a class="product-item product-item--gorizontal-card product-item--hot" href="#">
                         <div class="product-item--gorizontal-card__inner">
                             <div class="product-item__inner-text">
                                 <h4 class="product-item__title">Duffle bag</h4>
@@ -392,7 +393,7 @@
                                         <source srcset="images/content/logo-mobile.png" media="(max-width: 575px)">
                                          <img src="images/content/logo.png" alt="logo">
                                      </picture>
-                                  </a>
+                                </a>
                                 <a class="review-content__more-btn" href="#">More<svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.5303 6.53033C20.8232 6.23744 20.8232 5.76256 20.5303 5.46967L15.7574 0.696699C15.4645 0.403806 14.9896 0.403806 14.6967 0.696699C14.4038 0.989592 14.4038 1.46447 14.6967 1.75736L18.9393 6L14.6967 10.2426C14.4038 10.5355 14.4038 11.0104 14.6967 11.3033C14.9896 11.5962 15.4645 11.5962 15.7574 11.3033L20.5303 6.53033ZM3.43879e-09 6.75L20 6.75L20 5.25L-3.43879e-09 5.25L3.43879e-09 6.75Z" fill="black"/>
                                     </svg></a>
@@ -424,6 +425,62 @@
            </div>
        </div>
    </section>
+
+   <footer class="footer">
+       <div class="container">
+            <div class="footer__top-inner">
+               <form class="footer__form-singup">
+                   <h5 class="footer__form-title">Get 10% off your first purchase by subscribing</h5>
+                   <div class="footer__form-inner">
+                        <label for="emalHelp"></label>
+                        <input type="email" id="emailHelp" aria-describedby="emailHelp" class="footer__form-input" placeholder="Enter your email" autocomplete="off">
+                        <button class="footer__form-btn" type="submit">Sing Up</button>
+                        <p class="footer__form-description">Free delivery  and next day returns  on all EU orders</p>
+                   </div>
+               </form>   
+               <div class="footer__cols-inner">
+                <div class="footer__col-menu">
+                    <h5 class="footer__col-title">SHOP</h5>
+                    <ul class="footer__col-items">
+                        <li class="footer__col-item"><a class="footer__col-link" href="#">Mens</a></li>
+                        <li class="footer__col-item"><a class="footer__col-link" href="#">Womens</a></li>
+                        <li class="footer__col-item"><a class="footer__col-link" href="#">Kids</a></li>
+                        <li class="footer__col-item"><a class="footer__col-link" href="#">Shoes</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col-menu">
+                    <h5 class="footer__col-title">FOR CUSTOMERS</h5>
+                    <ul class="footer__col-items">
+                        <li class="footer__col-item"><a class="footer__col-link" href="#">About UA</a></li>
+                        <li class="footer__col-item"><a class="footer__col-link" href="#">Help & FAQs</a></li>
+                        <li class="footer__col-item"><a class="footer__col-link" href="#">Returns</a></li>
+                        <li class="footer__col-item"><a class="footer__col-link" href="#">Shipping & Delivery</a></li>
+                        <li class="footer__col-item"><a class="footer__col-link" href="#">Size Guides</a></li>
+                        <li class="footer__col-item"><a class="footer__col-link" href="#">Gift Cards</a></li>
+                        <li class="footer__col-item"><a class="footer__col-link" href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <ul class="footer__social-items">
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25 10H22C20.6739 10 19.4021 10.5268 18.4645 11.4645C17.5268 12.4021 17 13.6739 17 15V18H14V22H17V30H21V22H24L25 18H21V15C21 14.7348 21.1054 14.4804 21.2929 14.2929C21.4804 14.1054 21.7348 14 22 14H25V10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25 10H15C12.2386 10 10 12.2386 10 15V25C10 27.7614 12.2386 30 15 30H25C27.7614 30 30 27.7614 30 25V15C30 12.2386 27.7614 10 25 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 19.3698C24.1234 20.2021 23.9813 21.052 23.5938 21.7988C23.2063 22.5456 22.5932 23.1512 21.8416 23.5295C21.0901 23.9077 20.2385 24.0394 19.4078 23.9057C18.5771 23.7721 17.8098 23.3799 17.2149 22.785C16.6199 22.1901 16.2277 21.4227 16.0941 20.592C15.9604 19.7614 16.0921 18.9097 16.4703 18.1582C16.8486 17.4067 17.4542 16.7936 18.201 16.4061C18.9478 16.0186 19.7978 15.8764 20.63 15.9998C21.4789 16.1257 22.2649 16.5213 22.8717 17.1281C23.4785 17.735 23.8741 18.5209 24 19.3698Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31 11.0101C30.0424 11.6855 28.9821 12.2022 27.86 12.5401C27.2577 11.8476 26.4573 11.3567 25.567 11.134C24.6767 10.9112 23.7395 10.9673 22.8821 11.2945C22.0247 11.6218 21.2884 12.2045 20.773 12.9638C20.2575 13.7231 19.9877 14.6224 20 15.5401V16.5401C18.2426 16.5856 16.5013 16.1959 14.931 15.4055C13.3607 14.6151 12.0103 13.4487 11 12.0101C11 12.0101 7 21.0101 16 25.0101C13.9405 26.408 11.4872 27.109 9 27.0101C18 32.0101 29 27.0101 29 15.5101C28.9991 15.2315 28.9723 14.9537 28.92 14.6801C29.9406 13.6735 30.6608 12.4028 31 11.0101V11.0101Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.5406 14.42C30.4218 13.9454 30.1799 13.5106 29.8392 13.1594C29.4986 12.8082 29.0713 12.5532 28.6006 12.42C26.8806 12 20.0006 12 20.0006 12C20.0006 12 13.1206 12 11.4006 12.46C10.9298 12.5932 10.5025 12.8482 10.1619 13.1994C9.82129 13.5506 9.57936 13.9854 9.46057 14.46C9.14579 16.2056 8.99181 17.9763 9.00057 19.75C8.98935 21.537 9.14334 23.3213 9.46057 25.08C9.59153 25.5398 9.83888 25.9581 10.1787 26.2945C10.5186 26.6308 10.9394 26.8738 11.4006 27C13.1206 27.46 20.0006 27.46 20.0006 27.46C20.0006 27.46 26.8806 27.46 28.6006 27C29.0713 26.8668 29.4986 26.6118 29.8392 26.2606C30.1799 25.9094 30.4218 25.4746 30.5406 25C30.8529 23.2676 31.0069 21.5103 31.0006 19.75C31.0118 17.963 30.8578 16.1787 30.5406 14.42V14.42Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.7506 23.02L23.5006 19.75L17.7506 16.48V23.02Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+                    </ul>
+                </div>
+            </div>
+            </div> 
+           <div class="footer__bottom">
+            <a class="logo__images logo__footer" href="#">
+                <picture>
+                    <source srcset="images/content/logo-mobile.png" media="(max-width: 575px)">
+                     <img src="images/content/logo.png" alt="logo">
+                 </picture>
+               </a>   
+            <p class="footer__policy-text"><span>&copy;</span> Under Armour™, Inc.<a class="footer__policy-link">Privacy Policy Terms & Conditions</a></p></div>
+           </div>
+       </div>
+   </footer>
 
     <script src="js/main.min.js"></script>    
 </body>

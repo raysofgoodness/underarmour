@@ -1,0 +1,133 @@
+.footer {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    background-color: #000;
+}
+.footer__form-singup {
+    position: relative;
+    margin-bottom: 100px;
+    max-width: 480px;
+    width: 100%;
+}
+.footer__form-title {
+    max-width: 350px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 31px; 
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.footer__top-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__form-inner {
+    max-width: 500px;
+    position: relative;
+}
+.footer__form-input {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 12px 120px 12px 0px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
+    max-width: 458px;
+    width: 100%;
+    &:focus {
+        color: #fff;
+        padding-left: 12px;
+        outline-color: $brand-color;
+    }
+}
+.footer__form-btn {
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    text-transform: none;
+    padding-right: 30px;
+    position: absolute;
+    top: 12px;
+    right: 36px;
+    &::after {
+        content: url(../images/icons/form-arrow.svg);
+        position: absolute;
+        top: 0;
+        right: -10px;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.footer__form-description {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba($color: #fff, $alpha: 0.5);
+}
+.footer__bottom {
+    display: flex;
+    align-items: center;
+}
+.logo__footer {
+    padding-right: 20px;
+}
+.footer__policy-text {
+    font-size: 10px;
+    line-height: 12px;
+    color: #fff;
+}
+.footer__cols-inner {
+    max-width: 528px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__col-menu {
+    max-width: 200px;
+    color: #fff;
+}
+.footer__col-title {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.footer__col-item {
+    & + & {
+        padding-top: 14px;
+    }
+    display: block;
+}
+.footer__col-link {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+}
+.footer__social {
+    max-width: 80px;
+}
+.footer__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.footer__social-item {
+    & + & {
+        padding-top: 18px;
+    }
+    display: block;
+    transition: all .3s;
+    &:hover {
+        .footer__social-link {
+            background-color: rgba($color: #fff, $alpha: 0.2);
+        }
+    }
+}
