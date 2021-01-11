@@ -1,0 +1,109 @@
+// adaptive header 
+@media (max-width: 1250px ) {
+    .open-search {
+        .search__input {
+            width: 120px;
+        }
+    }
+}     
+
+@media (max-width: 1197px ) {
+
+    .header__inner {
+        padding: 5px 0px;
+        &.menu-open {
+            .header__menu {
+                left: 0;
+            }
+            .dropdown-into-menu {
+            }
+        }
+    }
+    .burger-menu {
+        display: block;
+    }
+    .header__menu {
+        position: absolute;
+		width: 100%;
+		height: calc(100vh - 58px);
+		background: #fff;
+		top: 58px;
+        left: -100%;
+        padding: 40px 0px;
+        transition: cubic-bezier(.61,.31,.76,.89) .4s;
+    }
+    .dropdown-menu {
+        display: block;
+		text-align: center;
+    }
+    .dropdown-menu-item {
+        display: block;
+        width: 100%;
+        padding: 6px 0px;
+    }
+    .dropdown-menu-link {
+        display: block;
+        color: #000;
+        font-size: 14px;
+    }
+    .dropdown-into-menu {
+        position: relative;
+        top: 0;
+        display: none;
+    }
+    .dropdown-into-menu-item {
+        width: 100%;
+    }
+    .drop-list {
+        &.active {
+            .dropdown-into-menu {
+                background-color: rgb(211, 211, 211);
+            }
+        }
+    }
+
+
+
+    .vertical-line {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: 578px ) {
+    .header__inner {
+        padding: 0px;
+        &.menu-open {
+            .burger-button {
+                background-color: transparent;
+            }
+        }
+    }
+    .burger-button, .search__button, .user__nav-link {
+        width: 46px;
+        height: 46px;
+        background-color: transparent;
+        border-radius: unset; 
+    }
+    .burger-menu {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .basket-number {
+        top: 8px;
+        right: 0px;
+    }
+    .burger-button {
+        margin-left: 0px;
+    }
+    .user-nav {
+        align-items: center;
+    }
+    .form__search, .user-link, .favorite-link {
+        display: none;
+    }
+}

@@ -15,6 +15,7 @@
 }
 .burger-menu {
     position: relative;
+    display: none;
 }
 .logo {
     margin-right: 40px;
@@ -45,30 +46,6 @@
     text-align: center;
     border-radius: 50%;
 }
-.burger-dropdown {
-    position: absolute;
-    top: 53px;
-    left: -50px;
-    background-color: #fff;
-    width: 167px;
-    transition: all .3s ease-in .1s;
-    transform: translateY(-200%);
-    opacity: 0;
-}
-.burger-dropdown-item {
-    display: block;
-    text-align: center;
-    margin: 20px auto;
-    max-width: 90px;
-    width: 100%;
-}
-.burger-dropdown-link {
-    font-size: 12px;
-    color: #000;
-    font-weight: 600;
-    line-height: 15px;
-    transition: all .5s;
-}
 .burger-button {
     &:focus {
         outline: none;
@@ -78,16 +55,11 @@
     .burger-button {
         background-color: rgba($color: #fff, $alpha: 1);
         outline: none;
-    }
-    svg {
-        path {
-            stroke: #000;
+        svg {
+            path {
+                stroke: #000;
+            }
         }
-    }
-    .burger-dropdown {
-        transform: translateY(0%);
-        opacity: 1;
-        transition: all .3s ease .1s;
     }
 }
 .dropdown-menu-item {
@@ -99,118 +71,70 @@
         .dropdown-menu-link {
             color: #000;
         }
-        .dropdown-into-menu {
-            opacity: 1;
-            visibility: visible; 
+        &::after {
+            height: 20px;
+            background-color: rgba($color: #000, $alpha: 1);
         }
-        .dropdown-into-menu-link {
+    }
+}
+.drop-list {
+    &.active {
+        background-color: #fff;
+        .dropdown-menu-link {
             color: #000;
+        }
+        .dropdown-into-menu {
+            display: block;
+        }
+        &::after {
+            height: 20px;
+            background-color: rgba($color: #000, $alpha: 1);
         }
     }
 }
 .dropdown-menu-link {
     font-weight: 700;
     font-size: 12px;
-    font-family: Montserrat;
     line-height: 15px;
     color: #fff;
     padding: 26px;
     text-transform: uppercase;
     transition: all .5s;
 }
+
 .dropdown-into-menu {
     position: absolute;
+    left: 0;
     top: 58px;
-    left: 0px;
     background-color: #fff;
-    display: block;
     width: 100%;
-    transition: all .5s;
-    opacity: 0;
-    visibility: hidden;
+    display: none;
 }
 .dropdown-into-menu-item {
     display: block;
     text-align: center;
-    background-color: #fff;
+    padding: 14px 0px;
     position: relative;
     cursor: pointer;
     transition: all .5s;
-    padding: 12px 0px;
-    &:hover {
-        background-color: #fff;
-        &::after {
-            right: -10px;
-            width: 28px;
-            background-color: #000;
-        }
-        .right-dropdown {
-            opacity: 1;
-            visibility: visible;
-        }
-    }
 }
 .dropdown-into-menu-link {
-    font-size: 12px;
-    color: #fff;
-    font-weight: 700;
-    line-height: 15px;
-    transition: all .5s;
-}
-.right-dropdown {
-    position: absolute;
-    top: -51px;
-    right: -100%;
-    background-color: #fff;
-    display: block;
-    width: 100%;
-    transition: all .5s;
-    opacity: 0;
-    visibility: hidden;
-}
-.right-dropdown-item {
-    display: block;
-    padding: 15px 26px;
-    text-align: center;
-    background-color: #fff;
-    position: relative;
-    cursor: pointer;
-    transition: all .5s; 
-}
-.right-dropdown-link {
     font-size: 12px;
     color: #000;
     font-weight: 700;
     line-height: 15px;
     transition: all .5s;
 }
+
 .form__search-inner {
     display: flex;
     align-items: center;
     transition: all .5s;
-    &:hover {
-        .search__button {
-            background-color: rgba($color: #000, $alpha: 0.2);
-            svg {
-                path {
-                    stroke: black; 
-                }
-            }
-        }
-        .search__input {
-            width: 180px;
-            border-bottom: 1px solid #000;
-        }
-    }
 }
 .search__button {
     transition: all .5s;
     margin-right: 16px;
-    &:focus + .search__input {
-            width: 180px;
-            border-bottom: 1px solid #000;
-        }
-    }
+}
 .search__input {
     border: none;
     background-color: transparent;
@@ -230,4 +154,18 @@
     padding: 2px;
     width: 180px;
     border-bottom: 1px solid #000;
+}
+.open-search {
+    .search__button {
+        background-color: rgba($color: #000, $alpha: 0.2);
+            svg {
+                path {
+                    stroke: black;
+                }
+            }
+    }
+    .search__input {
+        width: 180px;
+        border-bottom: 1px solid #000;
+    }
 }

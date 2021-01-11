@@ -1,9 +1,14 @@
 $(function() {
 
   $('.burger-menu').on('click', function () {
-		$(this).toggleClass('menu-open')
+		$('.header__inner').toggleClass('menu-open')
   });
-  
+
+  $('.drop-list').on('click', function () {
+    $(this).siblings().removeClass('active');
+    $(this).toggleClass('active');
+  });
+
   $('.product-item__favorite').on('click', function () {
 		$(this).toggleClass('product-item__favorite--active')
   });
@@ -11,15 +16,16 @@ $(function() {
   $('.collection-slider__share-btn').on('click', function () {
 		$('.collection-slider__share-items').toggleClass('open-share')
   });
+
+  $('.search__button').on('click', function (event) {
+    $('.form__search').toggleClass('open-search'),
+    event.preventDefault()
+  });
   
 });
 
 let mySwiper = new Swiper('.hero-slider__container', {
   slidesPerView: 1,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
   keyboard: {
     enabled: true,
   },
