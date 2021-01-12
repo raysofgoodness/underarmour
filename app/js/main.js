@@ -4,9 +4,10 @@ $(function() {
 		$('.header__inner').toggleClass('menu-open')
   });
 
-  $('.drop-list').on('click', function () {
+  $('.drop-list').on('click', function (drop) {
     $(this).siblings().removeClass('active');
     $(this).toggleClass('active');
+    drop.preventDefault()
   });
 
   $('.product-item__favorite').on('click', function () {
