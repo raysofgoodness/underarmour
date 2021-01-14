@@ -4,12 +4,10 @@
 .new-items__inner {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 .new-item {
     position: relative;
-    & + & {
-        margin-left: 10px;
-    }
 }
 .new-item__img {
     width: 100%;
@@ -28,7 +26,7 @@
     @extend .product-item__more-link;
     font-size: 24px;
     line-height: 28px;
-    bottom: 0px;
+    bottom: 2px;
     right: 50px;
     &::before {
         right: -48px;

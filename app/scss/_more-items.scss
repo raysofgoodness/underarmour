@@ -12,6 +12,10 @@
     & + & {
         margin-left: 10px;
     }
+    transition: all .4s;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 .more-item__image {
     width: 100%;

@@ -23,6 +23,15 @@
             }
         }
     }
+    &:hover {
+        .product-item__img {
+            transform: scale(-1, 1);
+            transition: all .5s;
+        }
+    }
+}
+.product-item__img {
+    transition: all .5s;
 }
 .product-item__favorite {
     position: absolute;

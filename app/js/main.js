@@ -3,7 +3,6 @@ $(function() {
   $('.burger-menu').on('click', function () {
 		$('.header__inner').toggleClass('menu-open')
   });
-
   $('.drop-list').on('click', function (drop) {
     $(this).siblings().removeClass('active');
     $(this).toggleClass('active');
@@ -85,5 +84,17 @@ let mySwiperStars = new Swiper('.reviews-content-slider', {
   },
 });
 
+var header = document.querySelector('.header')
+
+function animateHeader() {
+	if (header) {
+		if (window.pageYOffset > 200) {
+			header.classList.add('bg-black')
+			return
+		}
+		header.classList.remove('bg-black')
+	}
+}
+window.addEventListener('scroll', animateHeader)
 
 

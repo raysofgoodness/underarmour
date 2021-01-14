@@ -18,6 +18,15 @@
         font-weight: 700;
         color: #fff; 
     }
+    .swiper-slide {
+        cursor: pointer;
+        &:hover {
+            .hero-slider__btn-more {
+                background-color: #000;
+                color: #fff;  
+            }   
+        }
+    }
 }
 .swiper-slide {
     min-height: 100vh;
@@ -62,4 +71,5 @@
     font-size: 12px;
     line-height: 18px;
     font-weight: 700;
+    transition: all .5s;
 }
