@@ -503,9 +503,15 @@
         &.menu-open {
             .burger-button {
                 background-color: transparent;
+                svg {
+                    path {
+                        stroke: #fff;
+                    }
+                }
             }
         }
     }
+
     .header__menu {
         height: calc(100vh - 45px);
         top: 45px;
@@ -515,6 +521,14 @@
         height: 46px;
         background-color: transparent;
         border-radius: unset; 
+        &:hover {
+            background-color: transparent;
+            svg {
+                path {
+                    stroke: #fff;
+                }
+            }
+        }
     }
     .burger-menu {
         position: absolute;
