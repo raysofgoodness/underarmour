@@ -13,6 +13,11 @@
     width: 100%;
     object-fit: cover;
 }
+.new-item__bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
 .new-item__title {
     max-width: 250px;
     width: 100%;
@@ -23,12 +28,15 @@
     padding-top: 20px;
 }
 .new-item__more-link {
-    @extend .product-item__more-link;
     font-size: 24px;
     line-height: 28px;
-    bottom: 2px;
-    right: 50px;
-    &::before {
-        right: -48px;
+    font-weight: 600;
+    position: relative;
+    padding-right: 50px;
+    &::after {
+        content: url(../images/icons/arrow-right.svg);
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
