@@ -17,7 +17,7 @@
     &--gorizontal-item {
         .product-item__more-link {
             left: 30%;
-            bottom: 28px;
+            bottom: 26px;
             &::before {
                 left: 56px;
             }
@@ -43,6 +43,7 @@
     border-radius: 50%;
     cursor: pointer;
     outline: none;
+    z-index: 1;
     &::before {
         content: "";
         position: absolute;
@@ -60,7 +61,7 @@
 }
 .product-item__more-link {
     position: absolute;
-    bottom: 28px;
+    bottom: 26px;
     right: 60px;
     font-weight: 600;
     font-size: 14px;
